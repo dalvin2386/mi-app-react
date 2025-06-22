@@ -40,7 +40,7 @@ export const Producto = () => {
                 data-bs-target="#modalProducto"
                 onClick={() => openModal(1)}
               >
-                <i className="fa-solid fa-circle-plus"></i>Añadir
+                <i className="fa-solid fa-circle-plus me-2"></i>Añadir
               </button>
             </div>
           </div>
@@ -49,11 +49,11 @@ export const Producto = () => {
         <div className="col-12 col-lg-8 offset-lg-2">
           <div className="table-responsive">
             <table className="table table-bordered">
-              <thead>
+              <thead class="table-info">
                 <tr>
                   <th>#</th>
                   <th>Producto</th>
-                  <th>Descripcion</th>
+                  <th>Descripción</th>
                   <th>Precio</th>
                   <th>Comprado</th>
                   <th>Acciones</th>
@@ -113,8 +113,8 @@ export const Producto = () => {
         >
           <div className="modal-dialog">
             <div className="modal-content">
-              <div className="modal-header">
-                <label className="h5">{tituloModal}</label>
+              <div className="modal-header bg-primary" >
+                <label className="h5 text-white">{tituloModal}</label>
               </div>
               <div className="modal-body">
                 <Campo
@@ -143,7 +143,7 @@ export const Producto = () => {
                 ></Campo>
                 <div>
                   <input
-                    className="form-check-input"
+                    className="form-check-input me-2"
                     id="comprado"
                     type="checkbox"
                     onChange={() => setComprado((state) => !state)}
@@ -156,14 +156,14 @@ export const Producto = () => {
               </div>
               <div className="modal-footer">
                 <button className="btn btn-success" onClick={() => validar()}>
-                  <i className="fa-solid fa-floppy-disk"></i>Guardar
+                  <i className="fa-solid fa-floppy-disk me-2"></i>Guardar
                 </button>
                 <button
                   id="btnCerrarModal"
                   className="btn btn-danger"
                   data-bs-dismiss="modal"
                 >
-                  <i className="fa-solid fa-circle-xmark"></i>Cerrar
+                  <i className="fa-solid fa-circle-xmark me-2"></i>Cerrar
                 </button>
               </div>
             </div>
