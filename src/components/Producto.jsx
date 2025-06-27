@@ -150,7 +150,7 @@ export const Producto = () => {
                     checked={comprado}
                   />
                   <label className="form-check-label" htmlFor="comprado">
-                    Comprado
+                    Comprado.
                   </label>
                 </div>
               </div>
