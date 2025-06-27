@@ -1,6 +1,7 @@
 {
   "name": "lista_compras",
   "private": true,
+  "homepage": "https://dalvin2386.github.io/mi-app-react/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
